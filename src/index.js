@@ -8,7 +8,7 @@ module.exports = function getTimeForEducation(
     focus = 'family', 
     knowsProgramming = true,
     config = {family: 4}
-    ) {
-      return 0;
-  };
+    ) { 
+      return (knowsProgramming) ? Math.ceil(800 / config[focus]): Math.ceil(1300 / config[focus]);
+    }
   
